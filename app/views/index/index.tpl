@@ -1,5 +1,5 @@
 <div class="row text-center">
-    <a href="https://github.com/PruneMazui/GyazoPlus/raw/master/gyazo-plus-installer-1.1.exe" class="btn btn-lg btn-primary">
+    <a href="https://github.com/PruneMazui/GyazoPlus/raw/master/gyazo-plus-installer.exe" class="btn btn-lg btn-primary">
         <span class="glyphicon glyphicon-download-alt"></span>
         Download Gyazo Plus Installer
     </a>
