@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - 0.10.30
+
+branches:
+  only:
+    - master
+
+before_install: npm install -g grunt-cli
+
+notifications:
+  email: false

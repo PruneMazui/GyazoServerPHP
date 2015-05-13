@@ -1,0 +1,66 @@
+#gyazo-hj .inner_content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#gyazo-hj .inner_content .row p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/** ‰æ‘œ•\Ž¦Œn **/
+
+#gyazo-hj .image-container ul li img {
+    height: 200px;
+    width: 200px;
+}
+
+#gyazo-hj .image-container ul li {
+    color: white;
+    cursor: pointer;
+    line-height: 3em;
+    display: inline-block;
+    margin: 10px 5px 0;
+    vertical-align: top;
+    width: 208px;
+    padding: 3px;
+    border : 1px solid #DDDDDD;
+}
+
+#gyazo-hj .image-container ul {
+    list-style: outside none none;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: left;
+    width: 100%;
+    text-align: center !important;
+}
+
+#gyazo-hj .GI_TW_expander{
+     font-size: 200%;
+     background-color: #222222;
+}
+
+#gyazo-hj .GI_TW_Controls {
+	color : #FFFFFF;
+	background-color: #222222;
+}
+
+#gyazo-hj .GI_TW_expander .txt{
+	float: left;
+    font-size: 0.8em;
+    padding: 0 5% 0 0;
+    width: 25%;
+    color: white;
+    margin: 10px;
+}
+
+#gyazo-hj .GI_TW_expander .img{
+	float: left;
+	background-position: center center;
+    background-size: cover;
+    float: left;
+    position: relative;
+    width: 70%;
+    margin: 10px;
+}

@@ -1,0 +1,8 @@
+/var/log/php/*.log {
+	missingok
+	daily
+	rotate 10
+	compress
+	ifempty
+	create 0666 root root
+}
