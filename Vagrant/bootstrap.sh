@@ -35,7 +35,7 @@ rpm -ivh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 yum install -y httpd
 yum install -y mysql mysql-server
 yum install -y wget
-yum install -y php php-pear php-mysqlnd php-mbstring php-xml
+yum install -y php php-pear php-mysqlnd php-mbstring php-xml php-gd
 yum install -y php-pecl-xdebug
 
 # apacheの設定反映

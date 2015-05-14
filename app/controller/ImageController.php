@@ -11,15 +11,18 @@ class ImageController extends AbstractController
     public function showAction()
     {
         $access_key = $this->_getParam("access_key");
+        $type = $this->_getParam('type');
 
         if (! strlen($access_key)) {
             return $this->_response404();
         }
 
         $model_image = new Image($this->_database);
-        $row = $model_image->fetchByAccessKey($access_key);
+        $data = $model_image->fetchDataByAccessKey($access_key, $type);
 
-        if (! $row)
+        $length = strlen($data);
+
+        if (! $length)
         {
             return $this->_response404();
         }
@@ -28,8 +31,9 @@ class ImageController extends AbstractController
 
         $response = $this->getResponse();
         $response->clearAllHeaders()
-            ->setHeader('Content-type', 'image/png')
-            ->setBody($row['data']);
+            ->setHeader('Content-type', Image::getContentType($type))
+            ->setHeader('Content-length', $length)
+            ->setBody($data);
     }
 
     /**

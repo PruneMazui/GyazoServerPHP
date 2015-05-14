@@ -2,8 +2,45 @@
 namespace GyazoHj\Model;
 
 use GyazoHj\AppException;
+
 class Image extends AbstractDaoModel
 {
+    const CONTENT_TYPE_PNG = 'image/png';
+    const CONTENT_TYPE_JPG = 'image/jpeg';
+    const CONTENT_TYPE_GIF = 'image/gif';
+    const CONTENT_TYPE_UNKNOWN = '';
+
+    /**
+     * ContentTypeを判別
+     * @param string optional $type
+     * @return string
+     */
+    public static function getContentType($type = null)
+    {
+        if(is_null($type))
+        {
+            return self::CONTENT_TYPE_PNG;
+        }
+
+        $type = strtolower($type);
+
+        if($type == 'png')
+        {
+            return self::CONTENT_TYPE_PNG;
+        }
+
+        if($type == 'gif')
+        {
+            return self::CONTENT_TYPE_GIF;
+        }
+
+        if($type == 'jpg' || $type == 'jpeg')
+        {
+            return self::CONTENT_TYPE_JPG;
+        }
+
+        return self::CONTENT_TYPE_UNKNOWN;
+    }
 
     /**
      *
@@ -25,6 +62,44 @@ class Image extends AbstractDaoModel
         }
 
         return $filename;
+    }
+
+    /**
+     * JPG画像に変換
+     * @param string $data
+     * @return string
+     */
+    public static function convertJpg($data)
+    {
+        $im = imagecreatefromstring($data);
+
+        ob_start();
+        imagejpeg($im);
+        $ret = ob_get_contents();
+        ob_end_clean();
+
+        imagedestroy($im);
+
+        return $ret;
+    }
+
+    /**
+     * GIF画像に変換
+     * @param string $data
+     * @return string
+     */
+    public static function convertGif($data)
+    {
+        $im = imagecreatefromstring($data);
+
+        ob_start();
+        imagegif($im);
+        $ret = ob_get_contents();
+        ob_end_clean();
+
+        imagedestroy($im);
+
+        return $ret;
     }
 
     /**
@@ -82,6 +157,36 @@ class Image extends AbstractDaoModel
             ";
 
         return $this->_db->fetchRow($sql, [$access_key]);
+    }
+
+    /**
+     * アクセスキーから画像データを1件取得
+     *
+     * @param string $access_key
+     * @param string optional $type
+     * @return string
+     */
+    public function fetchDataByAccessKey($access_key, $type = null)
+    {
+        $content_type = self::getContentType($type);
+        if($content_type == self::CONTENT_TYPE_UNKNOWN)
+        {
+            return '';
+        }
+
+        $row = $this->fetchByAccessKey($access_key);
+
+        if(! $row) {
+            return '';
+        }
+
+        switch ($content_type)
+        {
+            case self::CONTENT_TYPE_PNG: return $row['data'];
+            case self::CONTENT_TYPE_JPG: return self::convertJpg($row['data']);
+            case self::CONTENT_TYPE_GIF: return self::convertGif($row['data']);
+            default: return '';
+        }
     }
 
     /**
