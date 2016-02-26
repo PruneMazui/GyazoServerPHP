@@ -5,7 +5,7 @@
  *
  */
 
-namespace GyazoHj\StdLib\Logger;
+namespace GyazoPhp\StdLib\Logger;
 
 abstract class AbstractLogger implements LoggerInterface
 {

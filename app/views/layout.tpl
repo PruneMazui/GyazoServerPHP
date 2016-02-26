@@ -9,7 +9,7 @@
 
 {import file="_parts/layout/header.tpl"}
 
-<div class="container" id="gyazo-hj">
+<div class="container" id="gyazo-php">
 	{$layout->content nofilter}
 </div><!-- /container -->
 

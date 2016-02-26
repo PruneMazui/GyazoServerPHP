@@ -1,6 +1,6 @@
 <?php
-use GyazoHj\App;
-use GyazoHj\AutoLoader;
+use GyazoPhp\App;
+use GyazoPhp\AutoLoader;
 
 call_user_func(function() {
 
@@ -34,9 +34,9 @@ call_user_func(function() {
     // vendor/autoload
     require BASE_DIR . '/vendor/autoload.php';
 
-    // GyazoHj
+    // GyazoPhp
     require_once CLASS_DIR . '/AutoLoader.php';
-    AutoLoader::addNamespace('GyazoHj', CLASS_DIR);
+    AutoLoader::addNamespace('GyazoPhp', CLASS_DIR);
 
     // ロケール設定(ja_JP.UTF-8がZFで対応されていない)
     \Zend_Locale::setDefault('ja_JP');

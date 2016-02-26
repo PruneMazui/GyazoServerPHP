@@ -5,7 +5,7 @@
  *
  */
 
-namespace GyazoHj\StdLib\Logger;
+namespace GyazoPhp\StdLib\Logger;
 
 class StreamLogger extends AbstractLogger
 {
@@ -23,7 +23,7 @@ class StreamLogger extends AbstractLogger
     }
 
     /**
-     * @see \GyazoHj\StdLib\Logger\Handler\LoggerInterface::log()
+     * @see \GyazoPhp\StdLib\Logger\Handler\LoggerInterface::log()
      */
     public function log($message, $priority, $timestamp)
     {

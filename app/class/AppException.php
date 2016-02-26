@@ -1,6 +1,6 @@
 <?php
 
-namespace GyazoHj;
+namespace GyazoPhp;
 
 class AppException extends \RuntimeException
 {

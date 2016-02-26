@@ -3,7 +3,7 @@
  * Zx_View_Smarty
  */
 
-use GyazoHj\StdLib\PathUtil;
+use GyazoPhp\StdLib\PathUtil;
 
 /**
  * Zend_Viewをsmartyで使うためのクラス。Smarty3必須.

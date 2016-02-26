@@ -1,5 +1,5 @@
 <?php
-namespace GyazoHj\StdLib\SmartyX;
+namespace GyazoPhp\StdLib\SmartyX;
 
 /**
  * Smarty のプラグインでクロージャーを使うためのラッパー

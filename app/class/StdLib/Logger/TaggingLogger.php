@@ -5,7 +5,7 @@
  *
  */
 
-namespace GyazoHj\StdLib\Logger;
+namespace GyazoPhp\StdLib\Logger;
 
 class TaggingLogger extends AbstractLogger
 {
@@ -57,7 +57,7 @@ class TaggingLogger extends AbstractLogger
     }
 
     /**
-     * @see \GyazoHj\StdLib\Logger\LoggerInterface::log()
+     * @see \GyazoPhp\StdLib\Logger\LoggerInterface::log()
      */
     public function log($message, $priority, $timestamp)
     {

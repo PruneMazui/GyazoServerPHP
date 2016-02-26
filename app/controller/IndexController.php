@@ -1,6 +1,6 @@
 <?php
 
-use GyazoHj\Model\ApplyType;
+use GyazoPhp\Model\ApplyType;
 
 class IndexController extends AbstractController
 {

@@ -1,7 +1,7 @@
 <?php
 
-use GyazoHj\Model\ApplyType;
-use GyazoHj\Model\Image;
+use GyazoPhp\Model\ApplyType;
+use GyazoPhp\Model\Image;
 
 class ListController extends AbstractController
 {

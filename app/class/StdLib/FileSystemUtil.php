@@ -5,14 +5,14 @@
  * @package   StdLib
  */
 
-namespace GyazoHj\StdLib;
+namespace GyazoPhp\StdLib;
 
 /**
  * ファイルシステムユーティリティ
  *
  * @package   StdLib
  */
-class FileSystemUtil extends \GyazoHj\StdLib\ObjectAbstract
+class FileSystemUtil extends \GyazoPhp\StdLib\ObjectAbstract
 {
     /**
      * 書込み可能ディレクトリの作成（モード0777固定）

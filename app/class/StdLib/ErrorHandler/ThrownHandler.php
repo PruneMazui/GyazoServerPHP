@@ -6,7 +6,7 @@
  * 
  */
 
-namespace GyazoHj\StdLib\ErrorHandler;
+namespace GyazoPhp\StdLib\ErrorHandler;
 
 /**
  * エラーハンドラ PHPエラーを例外に変換
@@ -14,7 +14,7 @@ namespace GyazoHj\StdLib\ErrorHandler;
  * @package   StdLib
  * 
  */
-class ThrownHandler extends \GyazoHj\StdLib\ObjectAbstract
+class ThrownHandler extends \GyazoPhp\StdLib\ObjectAbstract
 {
     private $_original = false;
 

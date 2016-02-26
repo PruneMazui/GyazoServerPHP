@@ -5,14 +5,14 @@
  * @package   StdLib
  */
 
-namespace GyazoHj\StdLib;
+namespace GyazoPhp\StdLib;
 
 /**
  * 文字列関連ユーティリティ
  *
  * @package   StdLib
  */
-class StringUtil extends \GyazoHj\StdLib\ObjectAbstract
+class StringUtil extends \GyazoPhp\StdLib\ObjectAbstract
 {
     /**
      * 全角対応trim

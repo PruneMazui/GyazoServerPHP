@@ -1,5 +1,5 @@
 <?php
-namespace GyazoHj\StdLib\SmartyX;
+namespace GyazoPhp\StdLib\SmartyX;
 
 /**
  * @package		SmartyX

@@ -1,7 +1,7 @@
 <?php
-use GyazoHj\App;
-use GyazoHj\Model;
-use GyazoHj\HttpException;
+use GyazoPhp\App;
+use GyazoPhp\Model;
+use GyazoPhp\HttpException;
 
 /**
  * コントローラー基底クラス

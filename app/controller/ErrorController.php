@@ -1,7 +1,7 @@
 <?php
 
-use GyazoHj\HttpException;
-use GyazoHj\StdLib\ErrorHandler\LoggingHandler;
+use GyazoPhp\HttpException;
+use GyazoPhp\StdLib\ErrorHandler\LoggingHandler;
 
 /**
  * コントローラ - エラー

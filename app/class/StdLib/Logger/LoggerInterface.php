@@ -5,7 +5,7 @@
  *
  */
 
-namespace GyazoHj\StdLib\Logger;
+namespace GyazoPhp\StdLib\Logger;
 
 interface LoggerInterface
 {

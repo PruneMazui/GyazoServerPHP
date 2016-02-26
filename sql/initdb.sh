@@ -12,26 +12,26 @@ do
 done
 
 
-# run setup/*.sql > gyazo_hj
+# run setup/*.sql > gyazo_php
 echo "--------------------------------------------------"
-echo "run latest/*.sql > gyazo_hj"
+echo "run latest/*.sql > gyazo_php"
 
 files="./setup/*.sql"
 for filepath in ${files}
 do
-    echo "mysql gyazo_hj < "${filepath}
-    mysql gyazo_hj < ${filepath}
+    echo "mysql gyazo_php < "${filepath}
+    mysql gyazo_php < ${filepath}
 done
 
 # run setup/*.sql > test_property
 echo "--------------------------------------------------"
-echo "run latest/*.sql > test_gyazo_hj"
+echo "run latest/*.sql > test_gyazo_php"
 
 files="./setup/*.sql"
 for filepath in ${files}
 do
-    echo "mysql test_gyazo_hj < "${filepath}
-    mysql test_gyazo_hj < ${filepath}
+    echo "mysql test_gyazo_php < "${filepath}
+    mysql test_gyazo_php < ${filepath}
 done
 
 echo "done"

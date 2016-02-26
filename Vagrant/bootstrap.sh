@@ -8,7 +8,7 @@
 \cp -f /source/setup/dev/etc/sysconfig/network /etc/sysconfig/network
 \cp -f /source/setup/dev/etc/hosts /etc/hosts
 
-hostname gyazo-hj-dev
+hostname gyazo-php-dev
 
 yum update -y
 package-cleanup --oldkernels --count=1
@@ -82,17 +82,17 @@ fi
 service httpd restart
 
 # アプリケーションキャッシュディレクトリ作成
-if [ -e /var/opt/gyazo-hj ]; then
-    echo "/var/opt/gyazo-hj already exist"
+if [ -e /var/opt/gyazo-php ]; then
+    echo "/var/opt/gyazo-php already exist"
 else
-    mkdir /var/opt/gyazo-hj
+    mkdir /var/opt/gyazo-php
 fi
 
-if [ -e /var/opt/gyazo-hj/templates_c ]; then
-    echo "/var/opt/gyazo-hj/templates_c already exist"
+if [ -e /var/opt/gyazo-php/templates_c ]; then
+    echo "/var/opt/gyazo-php/templates_c already exist"
 else
-    mkdir /var/opt/gyazo-hj/templates_c
-    chmod 777 /var/opt/gyazo-hj/templates_c
+    mkdir /var/opt/gyazo-php/templates_c
+    chmod 777 /var/opt/gyazo-php/templates_c
 fi
 
 

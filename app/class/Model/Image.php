@@ -1,7 +1,7 @@
 <?php
-namespace GyazoHj\Model;
+namespace GyazoPhp\Model;
 
-use GyazoHj\AppException;
+use GyazoPhp\AppException;
 
 class Image extends AbstractDaoModel
 {

@@ -1,5 +1,5 @@
 <?php
-namespace GyazoHj\StdLib;
+namespace GyazoPhp\StdLib;
 
 /**
  * 設定ファイルスキャナ

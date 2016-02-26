@@ -6,7 +6,7 @@
  * 
  */
 
-namespace GyazoHj\StdLib;
+namespace GyazoPhp\StdLib;
 
 /**
  * ファイルパス関連ユーティリティ
@@ -14,7 +14,7 @@ namespace GyazoHj\StdLib;
  * @package   StdLib
  * 
  */
-class PathUtil extends \GyazoHj\StdLib\ObjectAbstract
+class PathUtil extends \GyazoPhp\StdLib\ObjectAbstract
 {
     /**
      * 指定したパス文字列にルートが含まれているかどうかを返す

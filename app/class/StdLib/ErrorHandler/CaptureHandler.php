@@ -6,7 +6,7 @@
  * 
  */
 
-namespace GyazoHj\StdLib\ErrorHandler;
+namespace GyazoPhp\StdLib\ErrorHandler;
 
 /**
  * エラーハンドラ
@@ -14,7 +14,7 @@ namespace GyazoHj\StdLib\ErrorHandler;
  * @package   StdLib
  * 
  */
-class CaptureHandler extends \GyazoHj\StdLib\ObjectAbstract
+class CaptureHandler extends \GyazoPhp\StdLib\ObjectAbstract
 {
     private $_obj;
 

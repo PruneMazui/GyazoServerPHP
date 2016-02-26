@@ -2,5 +2,5 @@
  * ユーザ
  *******************************************************************************/
 
-GRANT ALL ON test_gyazo_hj.* TO test_gyazo_hj@'localhost';
-GRANT ALL ON test_gyazo_hj.* TO test_gyazo_hj@'%';
+GRANT ALL ON test_gyazo_php.* TO test_gyazo_php@'localhost';
+GRANT ALL ON test_gyazo_php.* TO test_gyazo_php@'%';

@@ -1,8 +1,8 @@
 <?php
-namespace GyazoHj\Model;
+namespace GyazoPhp\Model;
 
-use GyazoHj\AppException;
-use GyazoHj\StdLib\SafeInvoker;
+use GyazoPhp\AppException;
+use GyazoPhp\StdLib\SafeInvoker;
 
 /**
  *

@@ -1,7 +1,7 @@
 <?php
-use GyazoHj\Model\ApplyType;
-use GyazoHj\Model\Image;
-use GyazoHj\Model\User;
+use GyazoPhp\Model\ApplyType;
+use GyazoPhp\Model\Image;
+use GyazoPhp\Model\User;
 
 class ImageController extends AbstractController
 {

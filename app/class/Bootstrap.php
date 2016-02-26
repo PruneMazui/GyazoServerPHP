@@ -1,9 +1,9 @@
 <?php
-namespace GyazoHj;
+namespace GyazoPhp;
 
-use GyazoHj\App;
-use GyazoHj\StdLib\FileSystemUtil;
-use GyazoHj\StdLib\SmartyX;
+use GyazoPhp\App;
+use GyazoPhp\StdLib\FileSystemUtil;
+use GyazoPhp\StdLib\SmartyX;
 
 class Bootstrap extends \Zend_Application_Bootstrap_Bootstrap
 {

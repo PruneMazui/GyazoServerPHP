@@ -5,10 +5,10 @@
  * 
  */
 
-namespace GyazoHj;
+namespace GyazoPhp;
 
-use GyazoHj\StdLib\ConfigScanner;
-use GyazoHj\StdLib\PathUtil;
+use GyazoPhp\StdLib\ConfigScanner;
+use GyazoPhp\StdLib\PathUtil;
 
 /**
  * アプリケーション
@@ -30,7 +30,7 @@ class App
     /**
      * インスタンス取得
      *
-     * @return \GyazoHj\App
+     * @return \GyazoPhp\App
      */
     public static function getInstance()
     {

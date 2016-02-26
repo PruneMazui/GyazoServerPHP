@@ -3,7 +3,7 @@
  * http例外
  */
 
-namespace GyazoHj;
+namespace GyazoPhp;
 
 /**
  * http例外

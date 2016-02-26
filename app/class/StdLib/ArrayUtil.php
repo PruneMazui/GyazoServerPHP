@@ -6,7 +6,7 @@
  * 
  */
 
-namespace GyazoHj\StdLib;
+namespace GyazoPhp\StdLib;
 
 /**
  * 配列関連ユーティリティ
@@ -14,7 +14,7 @@ namespace GyazoHj\StdLib;
  * @package   StdLib
  * 
  */
-class ArrayUtil extends \GyazoHj\StdLib\ObjectAbstract
+class ArrayUtil extends \GyazoPhp\StdLib\ObjectAbstract
 {
     public static function pickup(array $arr, $name)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace GyazoHj\Model;
+namespace GyazoPhp\Model;
 
 class User extends AbstractDaoModel
 {

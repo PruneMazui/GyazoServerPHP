@@ -1,7 +1,7 @@
 <?php
-namespace GyazoHj\StdLib\SmartyX;
+namespace GyazoPhp\StdLib\SmartyX;
 
-use GyazoHj\StdLib\ArrayUtil;
+use GyazoPhp\StdLib\ArrayUtil;
 use WebApply\Model\Material;
 
 /**

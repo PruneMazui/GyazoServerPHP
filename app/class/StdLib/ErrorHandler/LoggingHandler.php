@@ -6,7 +6,7 @@
  * 
  */
 
-namespace GyazoHj\StdLib\ErrorHandler;
+namespace GyazoPhp\StdLib\ErrorHandler;
 
 /**
  * エラーハンドラ PHPエラーをロギング
@@ -14,7 +14,7 @@ namespace GyazoHj\StdLib\ErrorHandler;
  * @package   StdLib
  * 
  */
-class LoggingHandler extends \GyazoHj\StdLib\ObjectAbstract
+class LoggingHandler extends \GyazoPhp\StdLib\ObjectAbstract
 {
     private $_original = false;
 

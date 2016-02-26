@@ -6,7 +6,7 @@
  * 
  */
 
-namespace GyazoHj\StdLib;
+namespace GyazoPhp\StdLib;
 
 /**
  * オブジェクトクラス

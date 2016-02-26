@@ -1,5 +1,5 @@
 <?php
-namespace GyazoHj;
+namespace GyazoPhp;
 
 /**
  * ディレクトリにベンダー名が必要ないオートローダー

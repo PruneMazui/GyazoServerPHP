@@ -1,14 +1,14 @@
 <?php
-namespace GyazoHj\Model;
+namespace GyazoPhp\Model;
 
-use GyazoHj\App;
+use GyazoPhp\App;
 
 /**
  * モデル - 抽象
  *
  * 
  */
-abstract class AbstractModel extends \GyazoHj\StdLib\ObjectAbstract
+abstract class AbstractModel extends \GyazoPhp\StdLib\ObjectAbstract
 {
     public function __construct()
     {
