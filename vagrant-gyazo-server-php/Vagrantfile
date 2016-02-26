@@ -1,14 +1,14 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "GyazoHJ_CentOS6.5"
+  config.vm.box = "GyazoServerPHP_CentOS6.5"
   config.vm.box_url = "https://github.com/2creatives/vagrant-centos/releases/download/v6.5.1/centos65-x86_64-20131205.box"
-  config.vm.network :private_network, ip: "192.168.33.33"
+  config.vm.network "forwarded_port", guest: 80, host: 8880
   config.vm.synced_folder "../", "/source/"
   Encoding.default_external = 'UTF-8'
 
   config.vm.provider :virtualbox do |vb|
-    vb.gui = true
+    # vb.gui = true
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
 

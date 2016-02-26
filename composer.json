@@ -50,5 +50,8 @@
         "phpunit/phpunit": "3.7.*",
         "phpunit/dbunit": "*",
         "phpunit/phpunit-selenium": "*"
+    },
+    "config" : {
+        "secure-http" : false
     }
 }
