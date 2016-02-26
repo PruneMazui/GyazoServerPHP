@@ -9,7 +9,7 @@
 	<meta name="copyright" content="Copyright &copy; " />
 	<link rel="shortcut icon" href="/favicon.ico" >
 
-	<title>Gyazo HJ</title>
+	<title>Gyazo Plus</title>
 
 {strip}
 	{** css **}
