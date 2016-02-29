@@ -22,7 +22,10 @@
             <li>
                 初回の起動時に設定画面が出るので、以下のように設定してください。
                 <ul>
-                    <li>アップロードホスト : <b>{$smarty.server.HTTP_HOST}</b></li>
+                    <li>アップロードホスト : <b>{$host}</b></li>
+                    {if $port != null}
+                    <li>ポート番号 : <b>{$port}</b></li>
+                    {/if}
                     <li>アップロードパス : <b>/image/upload</b></li>
                     <li>画像一覧のURL : <b>http://{$smarty.server.HTTP_HOST}/list/</b></li>
                 </ul>
