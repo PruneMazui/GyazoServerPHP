@@ -26,8 +26,8 @@
                     {if $port != null}
                     <li>ポート番号 : <b>{$port}</b></li>
                     {/if}
-                    <li>アップロードパス : <b>/image/upload</b></li>
-                    <li>画像一覧のURL : <b>http://{$smarty.server.HTTP_HOST}/list/</b></li>
+                    <li>アップロードパス : <b>{$config.path}image/upload</b></li>
+                    <li>画像一覧のURL : <b>http://{$smarty.server.HTTP_HOST}{$config.path}list/</b></li>
                 </ul>
             </li>
             <li>「画像を撮る」を実行後、キャプチャしたい範囲をマウスでドラッグ＆ドロップしてください。</li>

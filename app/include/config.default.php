@@ -21,3 +21,5 @@ $cfg['storage'] = array(
     'local_log'  => '/var/log/gyazo-php/',
     'local_tmp'  => '/var/tmp/gyazo-php/',
 );
+
+$cfg['path'] = '/';

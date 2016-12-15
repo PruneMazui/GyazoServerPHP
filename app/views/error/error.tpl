@@ -7,7 +7,7 @@
 					<strong>{$message|escape|nl2br nofilter}</strong>
 					<br />
 					<span>
-						<a href="/">トップへ戻る</a>
+						<a href="{$config.path}">トップへ戻る</a>
 					</span>
 				</div>
 			</div>

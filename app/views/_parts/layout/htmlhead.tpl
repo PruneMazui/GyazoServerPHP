@@ -11,25 +11,11 @@
 
 	<title>Gyazo Plus</title>
 
-{strip}
-	{** css **}
-	{$cssfiles[] = "/lib/bootstrap-3.3.4-dist/css/bootstrap.min.css"}
-	{$cssfiles[] = "/lib/jquery-ui-1.11.4.custom/jquery-ui.min.css"}
-	{$cssfiles[] = "/lib/jQuery.GI.TheWall.js-master/assets/css/GITheWall.css"}
-	{$cssfiles[] = "/style/style.css"}
-
-
-	{** javascript **}
-
-	{* jquery *}
-	{$jsfiles[] = "/lib/jquery-1.11.2.min.js"}
-	{$jsfiles[] = "/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"}
-
-	{* その他ライブラリ *}
-	{$jsfiles[] = "/lib/bootstrap-3.3.4-dist/js/bootstrap.min.js"}
-	{$jsfiles[] = "/lib/jQuery.GI.TheWall.js-master/jQuery.GI.TheWall.min.js"}
-{/strip}
-
-{stylesheet files=$cssfiles enable=false build=false combine="/style/combine.css" addtime=true}
-{javascript files=$jsfiles  enable=false build=false combine="/js/combine.js"   addtime=true}
-
+	<link type="text/css" href="{$config.path}lib/bootstrap-3.3.4-dist/css/bootstrap.min.css?" media="all" rel="stylesheet" />
+	<link type="text/css" href="{$config.path}lib/jquery-ui-1.11.4.custom/jquery-ui.min.css?" media="all" rel="stylesheet" />
+	<link type="text/css" href="{$config.path}lib/jQuery.GI.TheWall.js-master/assets/css/GITheWall.css?" media="all" rel="stylesheet" />
+	<link type="text/css" href="{$config.path}style/style.css?" media="all" rel="stylesheet" />
+	<script type="text/javascript" src="{$config.path}lib/jquery-1.11.2.min.js?"></script>
+	<script type="text/javascript" src="{$config.path}lib/jquery-ui-1.11.4.custom/jquery-ui.min.js?"></script>
+	<script type="text/javascript" src="{$config.path}lib/bootstrap-3.3.4-dist/js/bootstrap.min.js?"></script>
+	<script type="text/javascript" src="{$config.path}lib/jQuery.GI.TheWall.js-master/jQuery.GI.TheWall.min.js?"></script>

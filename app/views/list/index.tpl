@@ -9,7 +9,7 @@ var client_id = {$client_id|json_encode nofilter};
 		<ul>
 			{foreach $images as $image}
 			<li data-contenttype="inline" data-href="#{$image.access_key}">
-				<img src="/image/{$image.access_key}" />
+				<img src="{$config.path}image/{$image.access_key}" />
 			</li>
 			{/foreach}
 		</ul>
@@ -30,8 +30,8 @@ var client_id = {$client_id|json_encode nofilter};
 			</p>
 		</div>
 		<div class="img">
-			<a href="/image/{$image.access_key}" target="_blank">
-				<img src="/image/{$image.access_key}" />
+			<a href="{$config.path}image/{$image.access_key}" target="_blank">
+				<img src="{$config.path}image/{$image.access_key}" />
 			</a>
 		</div>
 	</div>

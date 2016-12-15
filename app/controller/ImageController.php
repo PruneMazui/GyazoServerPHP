@@ -2,6 +2,7 @@
 use GyazoPhp\Model\ApplyType;
 use GyazoPhp\Model\Image;
 use GyazoPhp\Model\User;
+use GyazoPhp\App;
 
 class ImageController extends AbstractController
 {
@@ -90,6 +91,6 @@ class ImageController extends AbstractController
         $this->getResponse()
             ->clearAllHeaders()
             ->setHeader(C_RESPONSE_CLIENT_ID, $user['client_id'])
-            ->setBody("http://" . $_SERVER['HTTP_HOST'] . '/image/' . $access_key);
+            ->setBody("http://" . $_SERVER['HTTP_HOST'] . App::getInstance()->getConfig('path') . 'image/' . $access_key);
     }
 }
