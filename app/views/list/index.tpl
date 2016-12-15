@@ -1,5 +1,6 @@
 <script type="text/javascript">
 var client_id = {$client_id|json_encode nofilter};
+var path = {$config.path|json_encode nofilter};
 </script>
 
 <div class="row image-container">

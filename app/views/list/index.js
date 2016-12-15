@@ -15,7 +15,7 @@ $(function(){
 		
 		$.ajax({
 			type: "POST",
-			url : "/image/delete",
+			url : path + "image/delete",
 			data : {
 				client_id : client_id,
 				access_key : access_key
